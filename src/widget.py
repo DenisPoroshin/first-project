@@ -16,7 +16,7 @@ def mask_account_card(card_info: str) -> str:
     card_type = " ".join(card_type_list)
     card_number = " ".join(card_number_list)
 
-    if card_type.lower() == "счет":
+    if card_type.lower() in ["счет"]:
         masked_number = get_mask_account(card_number)
     else:
         masked_number = get_mask_card_number(card_number)
