@@ -1,6 +1,6 @@
 import pytest
 
-from src.masks import get_mask_card_number, get_mask_account
+from src.masks import get_mask_account, get_mask_card_number
 
 
 @pytest.mark.parametrize(
@@ -18,11 +18,11 @@ from src.masks import get_mask_card_number, get_mask_account
         ("0000000000000000", "0000 00** **** 0000"),
     ],
 )
-def test_get_mask_card_number(card_number, expected):
+def test_get_mask_card_number(card_number: str, expected: str) -> None:
     assert get_mask_card_number(card_number) == expected
 
 
-def test_get_mask_card_number_else():
+def test_get_mask_card_number_else() -> None:
     with pytest.raises(ValueError):
         get_mask_card_number("1234567890")
         get_mask_card_number("")
@@ -45,11 +45,11 @@ def test_get_mask_card_number_else():
         ("00000000000000000000", "**0000"),
     ],
 )
-def test_get_mask_account(account_number, expected):
+def test_get_mask_account(account_number: str, expected: str) -> None:
     assert get_mask_account(account_number) == expected
 
 
-def test_get_mask_account_else():
+def test_get_mask_account_else() -> None:
     with pytest.raises(ValueError):
         get_mask_account("1234567890")
         get_mask_account("")
