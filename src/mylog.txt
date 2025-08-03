@@ -1,0 +1,2 @@
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
