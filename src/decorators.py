@@ -1,13 +1,21 @@
+import time
 from functools import wraps
 
 
 def log(filename=None):
+    """Декоратор, который будет автоматически регистрировать детали выполнения функций,
+    такие как время вызова, имя функции, передаваемые аргументы, результат выполнения и информация об ошибках."""
+
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
             try:
+                start_time = time.time()
                 result = func(*args, **kwargs)
-                success_message = f"{func.__name__} completed successfully. Result: {result}"
+                end_time = time.time()
+                success_message = (
+                    f"Start: {start_time}. {func.__name__} completed successfully. Result: {result}. End: {end_time}"
+                )
                 if filename:
                     with open(filename, "a", encoding="utf-8") as f:
                         f.write(success_message + "\n")
@@ -31,5 +39,8 @@ def log(filename=None):
 def my_function(x, y):
     return x + y
 
+
 my_function(4, 2)
-my_function(4, )
+my_function(
+    4,
+)

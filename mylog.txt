@@ -1,0 +1,70 @@
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+my_function completed successfully. Result: 6
+Error in my_function: TypeError. Input: (4,), {}
+my_function_one completed successfully. Result: 6
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 2025-08-03 22:42:28.346798. my_function_one completed successfully. Result: 6. End: 2025-08-03 22:42:28.346801
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754236322.7380083. my_function_one completed successfully. Result: 6. End: 1754236322.738009
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754236327.061057. my_function_one completed successfully. Result: 6. End: 1754236327.061059
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754237168.3057523. my_function completed successfully. Result: 6. End: 1754237168.305753
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754237168.3187811. my_function_one completed successfully. Result: 6. End: 1754237168.318782
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754237642.1111214. my_function completed successfully. Result: 6. End: 1754237642.1111221
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754237642.1258698. my_function_one completed successfully. Result: 6. End: 1754237642.1258707
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754237659.094822. my_function completed successfully. Result: 6. End: 1754237659.0948238
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754237659.1190765. my_function_one completed successfully. Result: 6. End: 1754237659.1190786
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754237997.8900857. my_function completed successfully. Result: 6. End: 1754237997.8900862
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754237997.9035003. my_function_one completed successfully. Result: 6. End: 1754237997.9035008
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754238001.678774. my_function completed successfully. Result: 6. End: 1754238001.6787763
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754238001.7011259. my_function_one completed successfully. Result: 6. End: 1754238001.7011278
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754238270.5518231. my_function completed successfully. Result: 6. End: 1754238270.5518239
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754238270.5652282. my_function_one completed successfully. Result: 6. End: 1754238270.5652287
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754238275.8038745. my_function completed successfully. Result: 6. End: 1754238275.8038764
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754238275.8312523. my_function_one completed successfully. Result: 6. End: 1754238275.831254
+Error in my_function_one: TypeError. Input: (4,), {}
+Start: 1754238291.8793051. my_function completed successfully. Result: 6. End: 1754238291.8793068
+Error in my_function: TypeError. Input: (4,), {}
+Start: 1754238291.9057949. my_function_one completed successfully. Result: 6. End: 1754238291.9057965
+Error in my_function_one: TypeError. Input: (4,), {}
