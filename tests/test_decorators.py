@@ -3,37 +3,37 @@ import pytest
 from src.decorators import log
 
 
-@log(filename="mylog.txt")
-def my_function_one(a: int, b: int) -> float:
-    """Функция сложения"""
-    return a + b
+def test_log():
+    @log(filename="my_log.txt")
+    def summa(x, y):
+        return x + y
 
+    result_summa = summa(1, 2)
+    assert f"summa ок. Результат: {result_summa}" == "summa ок. Результат: 3"
 
-def test_my_function_one_success() -> None:
-    my_function_one(4, 2)
-    with open(file="mylog.txt"):
-        assert "my_function completed successfully. Result: 6"
+    @log(filename="my_log.txt")
+    def sub(x, y):
+        return x - y
 
+    result_sub = sub(2, 1)
+    assert f"sub ок. Результат: {result_sub}" == "sub ок. Результат: 1"
 
-def test_my_function_one_not_arg() -> None:
-    my_function_one(
-        4,
-    )
-    with open(file="mylog.txt"):
-        assert "Error in my_function: TypeError. Input: (4,), {}"
+    @log(filename="my_log.txt")
+    def division(x, y):
+        return x / y
+
+    result_division = division(4, 2)
+    assert f"division ок. Результат: {result_division}" == "division ок. Результат: 2.0"
 
 
 @log()
-def my_function_two(x: int, y: int) -> float:
-    """Функция деления"""
+def my_function(x, y):
     return x / y
 
 
-def test_my_function_two_success() -> None:
-    my_function_two(4, 2)
-    assert "my_function completed successfully. Result: 2"
-
-
-def test_my_function_two_division_by_zero() -> None:
-    my_function_two(4, 0)
-    assert "Error in my_function: ZeroDivisionError. Input: (4, 0), {}"
+def test_decorator_cupsys(capsys):
+    with pytest.raises(Exception):
+        my_func_one = my_function()
+        my_func_two = my_function(1, 0)
+        captured = my_func_one.readouterr() and my_func_two.readouterr()
+        assert captured.out == Exception

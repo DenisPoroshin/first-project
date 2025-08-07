@@ -1,2 +1,0 @@
-Start: 1754236408.1441696. my_function completed successfully. Result: 6. End: 1754236408.1441703
-Error in my_function: TypeError. Input: (4,), {}
