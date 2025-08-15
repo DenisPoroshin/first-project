@@ -18,13 +18,13 @@ def transaction_amount(transaction):
             value = float(i["operationAmount"]["amount"])
             payload = {}
             headers = {"apikey": f"{API_KEY}"}
-            if value == "EUR":
+            if i["operationAmount"]["currency"]["code"] == "EUR":
                 response = requests.get(
                     f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=EUR&amount={value}",
                     headers=headers,
                     data=payload,
                 )
-            elif value == "USD":
+            elif i["operationAmount"]["currency"]["code"] == "USD":
                 response = requests.get(
                     f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount={value}",
                     headers=headers,

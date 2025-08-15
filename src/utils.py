@@ -14,5 +14,4 @@ def input_transaction(input_list):
         return []
     except TypeError:
         return []
-    except ValueError:
-        return []
+
