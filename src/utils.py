@@ -1,6 +1,7 @@
 import json
 import logging
 
+
 logging.basicConfig(
     filename="../logs/utils.log",
     filemode="w",
@@ -31,6 +32,3 @@ def input_transaction(input_list):
     except TypeError:
         logger.error("Файл не в формате списка")
         return []
-
-
-input_transaction("")
