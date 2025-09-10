@@ -4,10 +4,9 @@ from typing import Dict, List
 import pandas as pd
 
 # Определяем путь к файлам
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-FILE_PATH_1 = os.path.join(ROOT_DIR, "..", "data", "transactions.csv")
-FILE_PATH_2 = os.path.join(ROOT_DIR, "..", "data", "transactions_excel.xlsx")
-
+base_dir = os.path.dirname(os.path.abspath(__file__))
+FILE_PATH_1 = os.path.join(base_dir, "data/transactions.csv")
+FILE_PATH_2 = os.path.join(base_dir, "data/transactions_excel.xlsx")
 
 def reading_operations_from_csv(file_path: str, encoding: str = "utf-8") -> List[Dict]:
     """Преобразуем файл из формата CSV в словарь"""

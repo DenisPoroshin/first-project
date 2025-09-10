@@ -3,7 +3,7 @@ import logging
 
 
 logging.basicConfig(
-    filename="../logs/utils.log",
+    filename="../DenisProject/logs/utils.log",
     filemode="w",
     encoding="utf-8",
     format="%(asctime)s %(filename)s %(levelname)s: %(message)s",
@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def input_transaction(input_list):
+def reading_json_file(input_list):
     """Функция возвращает список словарей с данными о финансовых транзакциях
     из json-файла."""
     logger.info('Запуск функции "reading_json_file"')

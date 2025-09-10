@@ -93,5 +93,3 @@ def test_process_bank_operations(transactions_list_fixture: list[dict]) -> None:
 def test_process_bank_operations_else():
     with pytest.raises(ValueError):
         process_bank_operations([], [])
-
-
