@@ -1,12 +1,14 @@
-from src.utils import reading_json_file
-from src.transactions import reading_operations_from_csv, reading_operations_from_excel
-from src.processing import filter_by_state, sort_by_date
 from src.generators import filter_by_currency
-from src.process_bank import process_bank_search
 from src.masks import get_mask_account
+from src.process_bank import process_bank_search
+from src.processing import filter_by_state, sort_by_date
+from src.transactions import reading_operations_from_csv, reading_operations_from_excel
+from src.utils import reading_json_file
 
 
 def main():
+    """Функция, которая отвечает за основную логику проекта и связывает функциональности между собой."""
+
     transactions = []
     print("Привет! Добро пожаловать в программу работы с банковскими транзакциями.")
     print("Выберите необходимый пункт меню:")
